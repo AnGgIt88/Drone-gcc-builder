@@ -1,6 +1,6 @@
 # GCC Cross Compiler Toolchain Build Script
 
-[![Build Status](https://cloud.drone.io/api/badges/AnGgIt88/Drone_Test/status.svg)](https://cloud.drone.io/AnGgIt88/Drone_Test)
+[![Build Status](https://cloud.drone.io/api/badges/AnGgIt88/Drone-gcc-builder/status.svg)](https://cloud.drone.io/AnGgIt88/Drone-gcc-builder)
 
 This repository contains the script needed to compile bare metal GCC for various architectures using Linux distributions. The GCC source is fetched from the master branch hence, contains all the bleeding edge changes.
 
