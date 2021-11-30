@@ -1,0 +1,23 @@
+kind: pipeline
+name : Finix Gcc Compiler
+version: rev1.5_template
+steps:
+ - name: Building started..
+   image: xyzuan/xdocker:latest
+   environment:
+     GITHUB_EMAIL:
+       from_secret: EMAIL
+     GITHUB_TOKEN:
+       from_secret: API_TOKEN_GITHUB
+     GITHUB_USER:
+       from_secret: USERNAME
+     BOT_TOKEN:
+       from_secret: TELEGRAM_BOT_TOKEN
+     CHAT_ID:
+       from_secret: CHAT
+     GCC_NAME:
+       from_secret: GCC
+     DRONE_USER_CREATE: AnGgIt88:octocat,admin:true
+   commands:
+     - bash settup.sh
+     - bash run.sh
