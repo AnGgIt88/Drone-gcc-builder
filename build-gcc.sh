@@ -33,7 +33,7 @@ download_resources() {
   echo "Cloning binutils"
   git clone https://github.com/bminor/binutils-gdb -b master binutils --depth=1
   echo "Cloning GCC"
-  git clone https://github.com/gcc-mirror/gcc -b master gcc --depth=1
+  git clone https://github.com/gcc-mirror/gcc -b releases/gcc-11 gcc --depth=1
   cd ${WORK_DIR}
   echo "Downloaded prerequisites!"
 }

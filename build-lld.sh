@@ -44,7 +44,7 @@ download_resources() {
   echo ">"
   echo "> Downloading LLVM for LLD"
   echo ">"
-  git clone https://github.com/llvm/llvm-project -b main llvm --depth=1
+  git clone https://github.com/llvm/llvm-project -b release/13.x llvm --depth=1
   cd ${WORK_DIR}
 }
 
