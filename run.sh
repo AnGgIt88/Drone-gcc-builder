@@ -27,3 +27,4 @@ export GCC_VER="$(bin/arm-eabi-gcc --version)"
 export LLD_VER="$(bin/arm-eabi-ld.lld --version)"
 curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" -d chat_id="${CHAT_ID}" -d "disable_web_page_preview=true" -d "parse_mode=html" -d text="<b>$GCC_NAME GCC arm: Toolchain compilation Finished</b>%0A<b>Gcc Version : </b><code>$GCC_VER</code>%0A<b>LLD Version : </b><code>$LLD_VER</code>"
 curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" -d chat_id="${CHAT_ID}" -d "disable_web_page_preview=true" -d "parse_mode=html" -d text="<b>$GCC_NAME GCC arm: Toolchain pushed to : </b>https://github.com/"${GITHUB_USER}"/gcc-arm"
+
